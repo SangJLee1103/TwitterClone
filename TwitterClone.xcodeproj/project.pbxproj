@@ -9,16 +9,16 @@
 /* Begin PBXBuildFile section */
 		DE25A83E2C3AD2F000DD9358 /* TwitterCloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE25A83D2C3AD2F000DD9358 /* TwitterCloneApp.swift */; };
 		DE25A8402C3AD2F100DD9358 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE25A83F2C3AD2F100DD9358 /* ContentView.swift */; };
-		DE25A8422C3AD2F100DD9358 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE25A8412C3AD2F100DD9358 /* Assets.xcassets */; };
 		DE25A8452C3AD2F100DD9358 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE25A8442C3AD2F100DD9358 /* Preview Assets.xcassets */; };
+		DE25A84C2C3AD87C00DD9358 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE25A84B2C3AD87C00DD9358 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DE25A83A2C3AD2F000DD9358 /* TwitterClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwitterClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE25A83D2C3AD2F000DD9358 /* TwitterCloneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterCloneApp.swift; sourceTree = "<group>"; };
 		DE25A83F2C3AD2F100DD9358 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		DE25A8412C3AD2F100DD9358 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE25A8442C3AD2F100DD9358 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DE25A84B2C3AD87C00DD9358 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +53,7 @@
 			children = (
 				DE25A83D2C3AD2F000DD9358 /* TwitterCloneApp.swift */,
 				DE25A83F2C3AD2F100DD9358 /* ContentView.swift */,
-				DE25A8412C3AD2F100DD9358 /* Assets.xcassets */,
+				DE25A84B2C3AD87C00DD9358 /* Assets.xcassets */,
 				DE25A8432C3AD2F100DD9358 /* Preview Content */,
 			);
 			path = TwitterClone;
@@ -125,8 +125,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE25A84C2C3AD87C00DD9358 /* Assets.xcassets in Resources */,
 				DE25A8452C3AD2F100DD9358 /* Preview Assets.xcassets in Resources */,
-				DE25A8422C3AD2F100DD9358 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
