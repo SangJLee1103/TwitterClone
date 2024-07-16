@@ -23,8 +23,13 @@ struct ConversationCell: View {
                 
                 Text("Longer messages text to see what happens when I do this")
                     .font(.system(size: 14))
+                    .lineLimit(2)
+                    .multilineTextAlignment(.leading)
             }
+            .foregroundStyle(.black)
         }
+        
+        Divider()
     }
 }
 
