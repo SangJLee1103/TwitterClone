@@ -1,13 +1,13 @@
 //
-//  UserCell.swift
+//  ConversationsCell.swift
 //  TwitterClone
 //
-//  Created by 이상준 on 7/14/24.
+//  Created by 이상준 on 7/15/24.
 //
 
 import SwiftUI
 
-struct UserCell: View {
+struct ConversationCell: View {
     var body: some View {
         HStack(spacing: 12) {
             Image("venom-10")
@@ -21,14 +21,18 @@ struct UserCell: View {
                 Text("batman")
                     .font(.system(size: 14, weight: .semibold))
                 
-                Text("Eddie Brock")
+                Text("Longer messages text to see what happens when I do this")
                     .font(.system(size: 14))
+                    .lineLimit(2)
+                    .multilineTextAlignment(.leading)
             }
             .foregroundStyle(.black)
         }
+        
+        Divider()
     }
 }
 
 #Preview {
-    UserCell()
+    ConversationCell()
 }
