@@ -19,6 +19,8 @@
 		DE7AE6AD2C46B1D30022937B /* MessageInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7AE6AC2C46B1D30022937B /* MessageInputView.swift */; };
 		DE7AE6AF2C46B2520022937B /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7AE6AE2C46B2520022937B /* ChatView.swift */; };
 		DE7AE6B12C46B6F10022937B /* ChatBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7AE6B02C46B6F10022937B /* ChatBubble.swift */; };
+		DE7AE6B32C47FD350022937B /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7AE6B22C47FD350022937B /* Message.swift */; };
+		DE7AE6B52C48020A0022937B /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7AE6B42C48020A0022937B /* MessageView.swift */; };
 		DEB94FA52C455E7A006B99FB /* ConversationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB94FA42C455E7A006B99FB /* ConversationsView.swift */; };
 		DEB94FA72C455E83006B99FB /* ConversationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB94FA62C455E83006B99FB /* ConversationCell.swift */; };
 /* End PBXBuildFile section */
@@ -37,6 +39,8 @@
 		DE7AE6AC2C46B1D30022937B /* MessageInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageInputView.swift; sourceTree = "<group>"; };
 		DE7AE6AE2C46B2520022937B /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
 		DE7AE6B02C46B6F10022937B /* ChatBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBubble.swift; sourceTree = "<group>"; };
+		DE7AE6B22C47FD350022937B /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		DE7AE6B42C48020A0022937B /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
 		DEB94FA42C455E7A006B99FB /* ConversationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationsView.swift; sourceTree = "<group>"; };
 		DEB94FA62C455E83006B99FB /* ConversationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -92,6 +96,7 @@
 		DE25A84D2C42995400DD9358 /*  Model */ = {
 			isa = PBXGroup;
 			children = (
+				DE7AE6B22C47FD350022937B /* Message.swift */,
 			);
 			path = " Model";
 			sourceTree = "<group>";
@@ -125,6 +130,7 @@
 				DE7AE6AC2C46B1D30022937B /* MessageInputView.swift */,
 				DE7AE6AE2C46B2520022937B /* ChatView.swift */,
 				DE7AE6B02C46B6F10022937B /* ChatBubble.swift */,
+				DE7AE6B42C48020A0022937B /* MessageView.swift */,
 			);
 			path = Messages;
 			sourceTree = "<group>";
@@ -208,8 +214,10 @@
 				DE25A83E2C3AD2F000DD9358 /* TwitterCloneApp.swift in Sources */,
 				DE7AE6B12C46B6F10022937B /* ChatBubble.swift in Sources */,
 				DEB94FA72C455E83006B99FB /* ConversationCell.swift in Sources */,
+				DE7AE6B32C47FD350022937B /* Message.swift in Sources */,
 				DE25A8532C429CEB00DD9358 /* TweetCell.swift in Sources */,
 				DE25A8572C440A9500DD9358 /* SearchBar.swift in Sources */,
+				DE7AE6B52C48020A0022937B /* MessageView.swift in Sources */,
 				DE25A8592C440D6300DD9358 /* UserCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,7 +277,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -326,7 +334,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -344,6 +352,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TwitterClone/Preview Content\"";
+				DEVELOPMENT_TEAM = BFTA9SX898;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -351,6 +360,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -372,6 +382,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TwitterClone/Preview Content\"";
+				DEVELOPMENT_TEAM = BFTA9SX898;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -379,6 +390,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
