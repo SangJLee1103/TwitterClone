@@ -26,6 +26,8 @@
 		DE7AE6BC2C4809620022937B /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7AE6BB2C4809620022937B /* ProfileHeaderView.swift */; };
 		DE7AE6BE2C4809790022937B /* ProfileActionButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7AE6BD2C4809790022937B /* ProfileActionButtonView.swift */; };
 		DE7AE6C02C4809970022937B /* FilterButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7AE6BF2C4809970022937B /* FilterButtonView.swift */; };
+		DE7AE6C32C49595E0022937B /* NewTweetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7AE6C22C49595E0022937B /* NewTweetView.swift */; };
+		DE7AE6C72C49627A0022937B /* TextArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7AE6C62C49627A0022937B /* TextArea.swift */; };
 		DEB94FA52C455E7A006B99FB /* ConversationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB94FA42C455E7A006B99FB /* ConversationsView.swift */; };
 		DEB94FA72C455E83006B99FB /* ConversationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB94FA62C455E83006B99FB /* ConversationCell.swift */; };
 /* End PBXBuildFile section */
@@ -51,6 +53,8 @@
 		DE7AE6BB2C4809620022937B /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
 		DE7AE6BD2C4809790022937B /* ProfileActionButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileActionButtonView.swift; sourceTree = "<group>"; };
 		DE7AE6BF2C4809970022937B /* FilterButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterButtonView.swift; sourceTree = "<group>"; };
+		DE7AE6C22C49595E0022937B /* NewTweetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTweetView.swift; sourceTree = "<group>"; };
+		DE7AE6C62C49627A0022937B /* TextArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextArea.swift; sourceTree = "<group>"; };
 		DEB94FA42C455E7A006B99FB /* ConversationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationsView.swift; sourceTree = "<group>"; };
 		DEB94FA62C455E83006B99FB /* ConversationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -85,6 +89,7 @@
 		DE25A83C2C3AD2F000DD9358 /* TwitterClone */ = {
 			isa = PBXGroup;
 			children = (
+				DE7AE6C42C4962660022937B /* Utils */,
 				DE25A84D2C42995400DD9358 /*  Model */,
 				DE25A84E2C42996600DD9358 /* View */,
 				DE25A84F2C42996D00DD9358 /* ViewModel */,
@@ -114,6 +119,7 @@
 		DE25A84E2C42996600DD9358 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				DE7AE6C12C4959450022937B /* Tweets */,
 				DE7AE6B82C4808750022937B /* Profile */,
 				DEB94FA32C455E5E006B99FB /* Messages */,
 				DE25A83F2C3AD2F100DD9358 /* ContentView.swift */,
@@ -142,6 +148,30 @@
 				DE7AE6BF2C4809970022937B /* FilterButtonView.swift */,
 			);
 			path = Profile;
+			sourceTree = "<group>";
+		};
+		DE7AE6C12C4959450022937B /* Tweets */ = {
+			isa = PBXGroup;
+			children = (
+				DE7AE6C22C49595E0022937B /* NewTweetView.swift */,
+			);
+			path = Tweets;
+			sourceTree = "<group>";
+		};
+		DE7AE6C42C4962660022937B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				DE7AE6C52C4962710022937B /* Views */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		DE7AE6C52C4962710022937B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DE7AE6C62C49627A0022937B /* TextArea.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		DEB94FA32C455E5E006B99FB /* Messages */ = {
@@ -229,8 +259,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE25A8552C440A0500DD9358 /* SearchView.swift in Sources */,
+				DE7AE6C72C49627A0022937B /* TextArea.swift in Sources */,
 				DE7AE6AD2C46B1D30022937B /* MessageInputView.swift in Sources */,
 				DE25A8402C3AD2F100DD9358 /* ContentView.swift in Sources */,
+				DE7AE6C32C49595E0022937B /* NewTweetView.swift in Sources */,
 				DE25A8512C42999300DD9358 /* FeedView.swift in Sources */,
 				DE7AE6BC2C4809620022937B /* ProfileHeaderView.swift in Sources */,
 				DE7AE6AF2C46B2520022937B /* ChatView.swift in Sources */,
