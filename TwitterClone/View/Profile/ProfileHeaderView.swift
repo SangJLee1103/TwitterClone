@@ -48,8 +48,9 @@ struct ProfileHeaderView: View {
                         .font(.footnote)
                         .foregroundStyle(.gray)
                 }
-            }
-            .padding()
+            }.padding()
+            
+            ProfileActionButtonView(isCurrentUser: true)
             
             Spacer()
         }
