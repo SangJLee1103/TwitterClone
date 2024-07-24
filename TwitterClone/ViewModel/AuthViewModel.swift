@@ -10,9 +10,25 @@ import Firebase
 import FirebaseStorage
 
 class AuthViewModel: ObservableObject {
+    @Published var userSession: FirebaseAuth.User?
+    @Published var isAuthenticating = false
+    @Published var error: Error?
+    @Published var user: User?
+    
+    init() {
+        userSession = Auth.auth().currentUser
+        
+    }
     
     func login(email: String, password: String) {
-        
+        Auth.auth().signIn(withEmail: email, password: password) { result, error in
+            if let error = error {
+                print("DEBUG: Failed to upload image \(error.localizedDescription)")
+                return
+            }
+            
+            print("DEBUG: Successfully logged in")
+        }
     }
     
     func registerUser(email: String, password: String, username: String, fullname: String, profileImage: UIImage) {
@@ -52,5 +68,10 @@ class AuthViewModel: ObservableObject {
                 }
             }
         }
+    }
+    
+    func signOut() {
+        userSession = nil
+        try? Auth.auth().signOut()
     }
 }
