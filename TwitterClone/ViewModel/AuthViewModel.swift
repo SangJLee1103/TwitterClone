@@ -13,7 +13,7 @@ class AuthViewModel: ObservableObject {
     @Published var userSession: FirebaseAuth.User?
     @Published var isAuthenticating = false
     @Published var error: Error?
-    @Published var user: User?
+//    @Published var user: User?
     
     init() {
         userSession = Auth.auth().currentUser
@@ -27,12 +27,11 @@ class AuthViewModel: ObservableObject {
                 return
             }
             
-            print("DEBUG: Successfully logged in")
+            self.userSession = result?.user
         }
     }
     
     func registerUser(email: String, password: String, username: String, fullname: String, profileImage: UIImage) {
-        
         guard let imageData = profileImage.jpegData(compressionQuality: 0.3) else { return }
         let filename = NSUUID().uuidString
         let storageRef = Storage.storage().reference().child(filename)
@@ -57,13 +56,13 @@ class AuthViewModel: ObservableObject {
                     guard let user = result?.user else { return }
                     
                     let data = ["email": email,
-                                "username": username, 
+                                "username": username.lowercased(), 
                                 "fullname": fullname,
                                 "profileImageUrl": profileImageUrl,
                                 "uid": user.uid]
                     
                     Firestore.firestore().collection("users").document(user.uid).setData(data) { _ in
-                        print("DEBUG: Successfully uploaded user data..")
+                        self.userSession = user
                     }
                 }
             }
