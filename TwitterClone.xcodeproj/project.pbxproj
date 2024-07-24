@@ -24,6 +24,7 @@
 		DE7178422C4CF438006CAF29 /* FirebaseFunctions in Frameworks */ = {isa = PBXBuildFile; productRef = DE7178412C4CF438006CAF29 /* FirebaseFunctions */; };
 		DE7178442C4CF438006CAF29 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = DE7178432C4CF438006CAF29 /* FirebaseStorage */; };
 		DE7178462C4CFA64006CAF29 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7178452C4CFA64006CAF29 /* AuthViewModel.swift */; };
+		DE7178482C50FC32006CAF29 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7178472C50FC32006CAF29 /* User.swift */; };
 		DE7AE6AD2C46B1D30022937B /* MessageInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7AE6AC2C46B1D30022937B /* MessageInputView.swift */; };
 		DE7AE6AF2C46B2520022937B /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7AE6AE2C46B2520022937B /* ChatView.swift */; };
 		DE7AE6B12C46B6F10022937B /* ChatBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7AE6B02C46B6F10022937B /* ChatBubble.swift */; };
@@ -58,6 +59,7 @@
 		DE7178382C4B7A79006CAF29 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		DE71783A2C4CF261006CAF29 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DE7178452C4CFA64006CAF29 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		DE7178472C50FC32006CAF29 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		DE7AE6AC2C46B1D30022937B /* MessageInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageInputView.swift; sourceTree = "<group>"; };
 		DE7AE6AE2C46B2520022937B /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
 		DE7AE6B02C46B6F10022937B /* ChatBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBubble.swift; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				DE7AE6B22C47FD350022937B /* Message.swift */,
+				DE7178472C50FC32006CAF29 /* User.swift */,
 			);
 			path = " Model";
 			sourceTree = "<group>";
@@ -325,6 +328,7 @@
 				DE7178462C4CFA64006CAF29 /* AuthViewModel.swift in Sources */,
 				DE7AE6B32C47FD350022937B /* Message.swift in Sources */,
 				DE7AE6BA2C4808800022937B /* UserProfileView.swift in Sources */,
+				DE7178482C50FC32006CAF29 /* User.swift in Sources */,
 				DE25A8532C429CEB00DD9358 /* TweetCell.swift in Sources */,
 				DE25A8572C440A9500DD9358 /* SearchBar.swift in Sources */,
 				DE7AE6CE2C49F98D0022937B /* CustomTextField.swift in Sources */,
