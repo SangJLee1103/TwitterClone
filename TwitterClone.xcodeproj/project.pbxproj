@@ -45,6 +45,7 @@
 		DE7AE6CE2C49F98D0022937B /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7AE6CD2C49F98D0022937B /* CustomTextField.swift */; };
 		DEB94FA52C455E7A006B99FB /* ConversationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB94FA42C455E7A006B99FB /* ConversationsView.swift */; };
 		DEB94FA72C455E83006B99FB /* ConversationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB94FA62C455E83006B99FB /* ConversationCell.swift */; };
+		DEF7A7ED2C5A708C00D613F6 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF7A7EC2C5A708C00D613F6 /* ProfileViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -82,6 +83,7 @@
 		DE7AE6CD2C49F98D0022937B /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		DEB94FA42C455E7A006B99FB /* ConversationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationsView.swift; sourceTree = "<group>"; };
 		DEB94FA62C455E83006B99FB /* ConversationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationCell.swift; sourceTree = "<group>"; };
+		DEF7A7EC2C5A708C00D613F6 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +173,7 @@
 			children = (
 				DE7178452C4CFA64006CAF29 /* AuthViewModel.swift */,
 				DE71784F2C524955006CAF29 /* SearchViewModel.swift */,
+				DEF7A7EC2C5A708C00D613F6 /* ProfileViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -338,6 +341,7 @@
 				DE7AE6AF2C46B2520022937B /* ChatView.swift in Sources */,
 				DE7AE6CA2C49F7CF0022937B /* LoginView.swift in Sources */,
 				DEB94FA52C455E7A006B99FB /* ConversationsView.swift in Sources */,
+				DEF7A7ED2C5A708C00D613F6 /* ProfileViewModel.swift in Sources */,
 				DE7AE6C02C4809970022937B /* FilterButtonView.swift in Sources */,
 				DE25A83E2C3AD2F000DD9358 /* TwitterCloneApp.swift in Sources */,
 				DE7178392C4B7A79006CAF29 /* ImagePicker.swift in Sources */,
