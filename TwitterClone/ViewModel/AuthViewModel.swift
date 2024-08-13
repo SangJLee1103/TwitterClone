@@ -13,7 +13,9 @@ class AuthViewModel: ObservableObject {
     @Published var userSession: FirebaseAuth.User?
     @Published var isAuthenticating = false
     @Published var error: Error?
-//    @Published var user: User?
+    @Published var user: User?
+    
+    static let shared = AuthViewModel()
     
     init() {
         userSession = Auth.auth().currentUser
@@ -26,8 +28,8 @@ class AuthViewModel: ObservableObject {
                 print("DEBUG: Failed to upload image \(error.localizedDescription)")
                 return
             }
-            
             self.userSession = result?.user
+            self.fetchUser()
         }
     }
     
@@ -41,8 +43,6 @@ class AuthViewModel: ObservableObject {
                 print("DEBUG: Failed to upload image \(error.localizedDescription)")
                 return
             }
-            
-            print("DEBUG: Successfully uploaded user photo..")
             
             storageRef.downloadURL { url, _ in
                 guard let profileImageUrl = url?.absoluteString else { return }
@@ -63,6 +63,7 @@ class AuthViewModel: ObservableObject {
                     
                     Firestore.firestore().collection("users").document(user.uid).setData(data) { _ in
                         self.userSession = user
+                        self.fetchUser()
                     }
                 }
             }
@@ -71,6 +72,7 @@ class AuthViewModel: ObservableObject {
     
     func signOut() {
         userSession = nil
+        user = nil
         try? Auth.auth().signOut()
     }
     
@@ -79,8 +81,7 @@ class AuthViewModel: ObservableObject {
         
         Firestore.firestore().collection("users").document(uid).getDocument { snapshot, _ in
             guard let data = snapshot?.data() else { return }
-            let user = User(dictionary: data)
-            print("DEBUG: User is \(user.username)")
+            self.user = User(dictionary: data)
         }
     }
 }

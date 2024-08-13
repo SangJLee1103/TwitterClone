@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE21C15C2C6B05520096FFF4 /* UploadTweetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE21C15B2C6B05520096FFF4 /* UploadTweetViewModel.swift */; };
 		DE25A83E2C3AD2F000DD9358 /* TwitterCloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE25A83D2C3AD2F000DD9358 /* TwitterCloneApp.swift */; };
 		DE25A8402C3AD2F100DD9358 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE25A83F2C3AD2F100DD9358 /* ContentView.swift */; };
 		DE25A8452C3AD2F100DD9358 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE25A8442C3AD2F100DD9358 /* Preview Assets.xcassets */; };
@@ -49,6 +50,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DE21C15B2C6B05520096FFF4 /* UploadTweetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadTweetViewModel.swift; sourceTree = "<group>"; };
 		DE25A83A2C3AD2F000DD9358 /* TwitterClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwitterClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE25A83D2C3AD2F000DD9358 /* TwitterCloneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterCloneApp.swift; sourceTree = "<group>"; };
 		DE25A83F2C3AD2F100DD9358 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -174,6 +176,7 @@
 				DE7178452C4CFA64006CAF29 /* AuthViewModel.swift */,
 				DE71784F2C524955006CAF29 /* SearchViewModel.swift */,
 				DEF7A7EC2C5A708C00D613F6 /* ProfileViewModel.swift */,
+				DE21C15B2C6B05520096FFF4 /* UploadTweetViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -344,6 +347,7 @@
 				DEF7A7ED2C5A708C00D613F6 /* ProfileViewModel.swift in Sources */,
 				DE7AE6C02C4809970022937B /* FilterButtonView.swift in Sources */,
 				DE25A83E2C3AD2F000DD9358 /* TwitterCloneApp.swift in Sources */,
+				DE21C15C2C6B05520096FFF4 /* UploadTweetViewModel.swift in Sources */,
 				DE7178392C4B7A79006CAF29 /* ImagePicker.swift in Sources */,
 				DE7AE6B12C46B6F10022937B /* ChatBubble.swift in Sources */,
 				DEB94FA72C455E83006B99FB /* ConversationCell.swift in Sources */,
