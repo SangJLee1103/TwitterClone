@@ -21,4 +21,9 @@ class SearchViewModel: ObservableObject {
             self.users = documents.map { User(dictionary: $0.data()) }
         }
     }
+    
+    func filteredUsers(_ query: String) -> [User] {
+        let lowercasedQuery = query.lowercased()
+        return users.filter { $0.fullname.lowercased().contains(lowercasedQuery) || $0.username.contains(lowercasedQuery) }
+    }
 }
