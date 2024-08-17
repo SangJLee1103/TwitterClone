@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SearchView: View {
     @State var searchText = ""
-    @ObservedObject var viewModel = SearchViewModel()
+    @ObservedObject var viewModel = SearchViewModel(config: .search)
     
     var body: some View {
         ScrollView {
@@ -29,8 +29,4 @@ struct SearchView: View {
             }.padding(.leading)
         }
     }
-}
-
-#Preview {
-    SearchView()
 }

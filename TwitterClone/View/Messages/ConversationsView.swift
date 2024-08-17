@@ -10,39 +10,50 @@ import SwiftUI
 struct ConversationsView: View {
     @State var isShowingMessageView = false
     @State var showChat = false
+    @State var user: User?
+    @ObservedObject var viewModel = ConversationsViewModel()
     
     var body: some View {
         ZStack(alignment: .bottomTrailing) {
-            NavigationLink(destination: ChatView(),
-                        isActive: $showChat,
-                        label: {} )
+            
+            if let user = user {
+                NavigationLink(destination: LazyView(ChatView(user: user)),
+                            isActive: $showChat,
+                            label: {} )
+            }
             
             ScrollView {
                 VStack {
-                    ForEach(0..<20) { _ in
+                    ForEach(viewModel.recentMessages) { message in
                         NavigationLink(
-                            destination: ChatView(),
+                            destination: LazyView(ChatView(user: message.user)),
                             label: {
-                                ConversationCell()
+                                ConversationCell(message: message)
                             })
                     }
                 }.padding()
             }
             
-            Button(action: { self.isShowingMessageView.toggle()}, label: {
-                Image(systemName: "envelope")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 32, height: 32)
-                    .padding()
-            })
-            .background(Color(.systemBlue))
-            .foregroundStyle(.white)
-            .clipShape(Circle())
-            .padding()
-            .sheet(isPresented: $isShowingMessageView, content: {
-                NewMessageView(show: $isShowingMessageView, startChat: $showChat)
-            })
+            HStack {
+                Spacer()
+                
+                Button(action: { self.isShowingMessageView.toggle()}, label: {
+                    Image(systemName: "envelope")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 32, height: 32)
+                        .padding()
+                })
+                .background(Color(.systemBlue))
+                .foregroundStyle(.white)
+                .clipShape(Circle())
+                .padding()
+                .sheet(isPresented: $isShowingMessageView, content: {
+                    NewMessageView(show: $isShowingMessageView, startChat: $showChat, user: $user)
+                })
+            }
+            .navigationTitle("Messages")
+            .navigationBarTitleDisplayMode(.inline)
         }
     }
 }

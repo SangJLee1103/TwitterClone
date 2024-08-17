@@ -6,33 +6,36 @@
 //
 
 import SwiftUI
+import Kingfisher
 
 struct ConversationCell: View {
+    let message: Message
+    
     var body: some View {
-        HStack(spacing: 12) {
-            Image("venom-10")
-                .resizable()
-                .scaledToFill()
-                .clipped()
-                .frame(width: 56, height: 56)
-                .cornerRadius(28)
-            
-            VStack(alignment: .leading) {
-                Text("batman")
-                    .font(.system(size: 14, weight: .semibold))
+        VStack(alignment: .leading) {
+            HStack(spacing: 12) {
+                KFImage(URL(string: message.user.profileImageUrl))
+                    .resizable()
+                    .scaledToFill()
+                    .clipped()
+                    .frame(width: 56, height: 56)
+                    .cornerRadius(28)
                 
-                Text("Longer messages text to see what happens when I do this")
-                    .font(.system(size: 14))
-                    .lineLimit(2)
-                    .multilineTextAlignment(.leading)
+                VStack(alignment: .leading, spacing: 4) {
+                    Text(message.user.fullname)
+                        .font(.system(size: 14, weight: .semibold))
+                    
+                    Text(message.text)
+                        .font(.system(size: 15))
+                        .lineLimit(2)
+                }
+                .foregroundColor(.black)
+                .padding(.trailing)
+                
+                Spacer()
             }
-            .foregroundStyle(.black)
+            
+            Divider()
         }
-        
-        Divider()
     }
-}
-
-#Preview {
-    ConversationCell()
 }
